@@ -7,7 +7,7 @@
 
 <p>
   <strong>Contact:</strong>
-  <%= @conversation.contact_id %>
+  <%= link_to @conversation.contact.name, @conversation.contact %>
 </p>
 
 <%= link_to 'Edit', edit_conversation_path(@conversation) %> |
